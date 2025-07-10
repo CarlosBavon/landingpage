@@ -1,7 +1,7 @@
 import '../App.css'
 import { Routes, Route, Link } from 'react-router-dom';
 import FashionComponent from './fashionComponent';
-
+import TravelComponent from './travelComponent';
 
 
 function Products () {
@@ -22,10 +22,12 @@ function Products () {
                     <Link  style={{'textDecoration': 'none', 'padding': '20px'}} to='/miniatures'>MINIATURES</Link>
                 </div>
             </div>
+
+            
             
             <Routes>
                 <Route path='/fashion' element={<FashionComponent/>}/>
-                <Route path='/travel'/>
+                <Route path='/travel' element={<TravelComponent/>}/>
                 <Route path='/every-day'/>
                 <Route path='/miniatures'/>
             </Routes>
